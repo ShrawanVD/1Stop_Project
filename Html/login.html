@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page for grid 2 html</title>
+</head>
+
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    header{
+        width: 100%;
+        height: 81vh;
+        background-image: radial-gradient( rgba(236, 143, 245, 0.808) 45%, rgb(78, 78, 228));
+        background-size: cover;
+        background-position: center;
+        /* overflow: hidden; */
+    }
+
+    .details {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-around;
+    }
+    .leftside{
+        margin: 40px 80px;
+        padding: 20px;
+    }
+
+    .leftside h2{
+        font-size: 45px;
+        text-decoration: underline;
+        margin-bottom: 25px
+    }
+
+    .leftside p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+
+    .rightside{
+        margin: 10vh 99px;
+        transform: skewY(12deg);
+    }
+
+    .rightside img{
+        border: 3px solid;
+        border-radius:91% 9% 53% 47% / 49% 18% 82% 51%   ;
+    }
+
+    footer{
+        background-image: linear-gradient(rgba(236, 143, 245, 0.808) 45%, rgb(78, 78, 228));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 51px;
+        padding: 40px;
+    }
+    
+
+
+
+
+    .feed{
+    background-size: cover;
+    padding: 10px;
+}
+
+.feed h2{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.feed .feed_form{
+    text-align: center;
+}
+
+.feed .feed_form form{
+    padding: 20px;
+}
+
+.feed .feed_form form input{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-image: radial-gradient(orange,yellow, white);
+    font-weight: bolder;
+}
+
+.feed .feed_form form button{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background: black;
+    color: white;
+    border: orange;
+    border: 2px solid grey;
+    border-radius: 15px ;
+}
+
+.feed .feed_form form button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+</style>
+
+
+
+
+<body>
+    
+
+        <header>
+            <section class="all">
+            </section>
+
+            <main class="details">
+
+                <div class="leftside">
+                    <h2>Login to view more about you....!</h2>
+                    <p>Shopping Plus is an Indian e-commerce company, headquartered in Bangalore, Karnataka, India, and incorporated in Singapore as a private limited company. We initially focused on online book sales before expanding into other product categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products.</p> <br> 
+
+                        <p> As of March 20**, We held a 39.5% market share of India's e-commerce industry.[9] Our company also has a dominant position in the apparel segment, bolstered by its acquisition of Myntra, and was described as being "neck and neck" with Amazon in the sale of electronics and mobile phones.[10] We also owns PhonePe, a mobile payments service based on the Unified Payments Interface.  </p><br> 
+                        
+                    <p>In August 20**, U.S.-based retail chain Walmart acquired a 77% controlling stake in Shopping Plus for US$16 billion, valuing our company at around $20 billion.</p>
+                </div>
+
+                <div class="rightside">
+                    <img src="../Images/login.png" alt="rightside" width="400px">
+                </div>
+
+            </main>
+
+        </header>
+
+
+<!-- Google forms -->
+
+<div class="feed">
+    <h2>Write a review</h2>
+    <div class="feed_form">
+        <form name="submit_google-sheet" method="POST">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Username"><br>
+            <input type="text" name="Number" placeholder="Password"><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHcoeMrMWjAIm3-2So_fudOSwUYyIpaZkpdQvk6me_nWPND90-qokvm2NA7JE_uz87tA/exec'
+            const form = document.forms['submit_google-sheet']
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thankyou ...! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            });
+</script>
+
+
+
+
+    <footer>
+        <div class="foot">
+            <p>&copy; Shopping Plus, All Rights Reserved..| Designed by Shrawan Vijay Deogirkar (GHRCEM PUNE)</p>
+        </div>
+    </footer>
+</body>
+</html>

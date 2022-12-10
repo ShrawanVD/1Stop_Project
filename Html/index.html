@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+
+
+    <section class="pure_header">
+        <div class="image">
+            <img src="../Images/logo.jpg" alt="Logo" width="64px">
+        </div>
+        <div class="title">
+            <h2>Shopping Plus</h2>
+            <span>--Contributing to Inspiring--</span>
+        </div>
+        <div class="login">
+            <a href="http://127.0.0.1:5500/Html/login.html">login</a>
+        </div>
+    </section>
+<hr>
+
+        <!-- navigation bar -->
+    <section class="nav_header">
+        <nav>
+            <ul>
+                <a href="#">Home</a>
+                <a href="http://127.0.0.1:5500/Html/about.html" target="_self">About</a>
+                <a href="http://127.0.0.1:5500/Html/services.html" target="_self">Services</a>
+                <a href="http://127.0.0.1:5500/Html/contacts.html" target="_self">Contact Us</a>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Showcase menu  -->
+    <section class="showcase">
+        <div class="showcasebox">
+            <h1>Get the life which you wished....!</h1>
+            <p class="showcasepara">Bringing the most demanded things for the luckiest customers all over the globe with the sole aim of making their life happy and pleasant with the gifts of ours... Happy Shopping....!
+            </p>
+            <div class="btn">
+                <a href="#" target="_self">Shop Now</a>
+            </div>
+        </div>
+        <div class="all">
+        <div class="boxA">
+            <img src="../Images/Electrical.png" alt="education" width="300vw">
+            <h4>Electrical Appliances</h4>
+            <p>Buy on the exciting deals on the electrical appliances</p>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/electrical.html" target="_self">Explore More</a>
+            </div>
+        </div>
+        <div class="boxB">
+            <img src="../Images/homes.jpg" alt="social" width="300vw">
+            <h4>Home Essentials</h4>
+            <p>The perfect deal on the home essentials</p>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/home.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<!-- The Moto Section -->
+    <section class="moto">
+        <div class="moto1">
+            <img src="../Images/mobiles.png" alt="Contribute" width="200vw">
+            <h4>Mobiles</h4>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/mobiles.html">View</a>
+            </div>
+        </div>
+        <div class="moto1">
+            <img src="../Images/fashion.webp" alt="Access" width="200vw">
+            <h4>Fashion</h4>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/fashion.html">View</a>
+            </div>
+        </div>
+        <div class="moto1">
+            <img src="../Images/beauty.jpg" alt="Govern" width="200vw">
+            <h4>Beauty</h4>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/beauty.html">View</a>
+            </div>
+        </div>
+        <div class="moto1">
+            <img src="../Images/toys.jpg" alt="Welfare" width="200vw">
+            <h4>Toys</h4>
+            <div class="btn">
+                <a href="http://127.0.0.1:5500/Html/toys.html">View</a>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Google forms -->
+    
+<div class="feed">
+    <h2>Write a review</h2>
+    <div class="feed_form">
+        <form name="submit-googlesheet" method="post">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="E-mail Id"><br>
+            <input type="number" name="Number" placeholder="Contact No"><br>
+            <textarea name="Review" id="" cols="7" rows="5" placeholder="Write your review"></textarea><br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Footer Section -->
+    <div class="foot">
+        <p>&copy; Shopping Plus, All Rights Reserved..| Designed by Shrawan Vijay Deogirkar (GHRCEM PUNE)</p>
+    </div>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtU61-fNs0ryahz0A9l2U0ZHuo42ALqL3SjvVt6fq23iP0QbbOiSoj-SpMtuOgg9zzZg/exec'
+            const form = document.forms['submit-googlesheet']
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+
+
+
+</div>
+</body>
+
+</html>

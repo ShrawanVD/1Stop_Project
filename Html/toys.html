@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrical Appliances</title>
+</head>
+
+
+
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    header{
+        width: 100%;
+        height: 100vh;
+        background-image: radial-gradient( rgba(236, 143, 245, 0.808) 45%, rgb(78, 78, 228));
+        background-size: cover;
+        background-position: center;
+        /* overflow: hidden; */
+    }
+
+    .details {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-around;
+    }
+    .leftside{
+        margin: 40px 80px;
+        padding: 20px;
+    }
+
+    .leftside h2{
+        font-size: 45px;
+        text-decoration: underline;
+        margin-bottom: 25px
+    }
+
+    .leftside p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+    }
+
+    .rightside{
+        margin: 10vh 99px;
+        transform: skewY(12deg);
+    }
+
+    .rightside img{
+        border: 3px solid;
+        border-radius:91% 9% 53% 47% / 49% 18% 82% 51%   ;
+    }
+
+    footer{
+        background-image: linear-gradient(rgba(236, 143, 245, 0.808) 45%, rgb(78, 78, 228));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 51px;
+        padding: 40px;
+    }
+    
+
+
+
+
+    .feed{
+    background-size: cover;
+    padding: 10px;
+}
+
+.feed h2{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.feed .feed_form{
+    text-align: center;
+}
+
+.feed .feed_form form{
+    padding: 20px;
+}
+
+.feed .feed_form form input{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-image: radial-gradient(orange,yellow, white);
+    font-weight: bolder;
+}
+
+.feed .feed_form form textarea{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-image: radial-gradient(orange,yellow, white);
+    font-weight: bolder;
+}
+
+.feed .feed_form form button{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background: black;
+    color: white;
+    border: orange;
+    border: 2px solid grey;
+    border-radius: 15px ;
+}
+
+.feed .feed_form form button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.cards .card-items{
+    margin: 10px 5px;
+}
+.cards .card-items .lines a{
+    text-align: center;
+    text-decoration: none;
+}
+.leftside .btn{
+    margin: 20px 335px;
+    border: 0;
+    max-width: 95px;
+}
+.leftside .btn button{
+    padding: 7px;
+    border: 2px solid darkkhaki;
+}
+.leftside .btn button:hover{
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+
+    
+
+        <header>
+            <section class="all">
+            </section>
+
+            <main class="details">
+
+                <div class="leftside">
+                    <h2>Much Awaited Deals on Toys ....!</h2>
+                
+
+
+                    <div class="cards">
+                        <div class="card-items">
+                            <img src="../Images/cars.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">cars</p>
+                                <p class="text-center" style="color: green">Min 30% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/bikes.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">bikes</p>
+                                <p class="text-center" style="color: green">Min 10% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/barbie.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">barbie</p>
+                                <p class="text-center" style="color: green">Min 30% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/trucks.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">trucks </p>
+                                <p class="text-center" style="color: green">Min 30% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/robots.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">robots</p>
+                                <p class="text-center" style="color: green">Min 50% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/buses.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">buses</p>
+                                <p class="text-center" style="color: green">Min 13% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/puzzles.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">puzzles</p>
+                                <p class="text-center" style="color: green">Min 35% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/cubes.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">cubes</p>
+                                <p class="text-center" style="color: green">Min 36% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/toy-set.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">toys-set</p>
+                                <p class="text-center" style="color: green">Min 50% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <img src="../Images/videogames.jpg" alt="not possible"
+                                style="border: 2px solid rosybrown" width="150vw"/>
+                            <div class="lines">
+                                <p class="text-center">Videogames</p>
+                                <p class="text-center" style="color: green">Min 80% off</p>
+                                <a href="#" class="text-center">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                    <button>View More</button>
+                </div>
+
+
+                </div>
+
+                <div class="rightside">
+                    <img src="../Images/about us.jpg" alt="rightside" width="400px">
+                </div>
+
+            </main>
+
+        </header>
+
+
+
+
+<!-- Google forms -->
+<div class="feed">
+    <h2>Write a review</h2>
+    <div class="feed_form">
+        <form name="submit_google-sheet" method="POST">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="E-mail Id"><br>
+            <input type="number" name="Number" placeholder="Contact No"><br>
+            <textarea name="Review" id="" cols="7" rows="5" placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHcoeMrMWjAIm3-2So_fudOSwUYyIpaZkpdQvk6me_nWPND90-qokvm2NA7JE_uz87tA/exec'
+            const form = document.forms['submit_google-sheet']
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thankyou ...! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            });
+</script>
+
+
+
+
+    <footer>
+        <div class="foot">
+            <p>&copy; Shopping Plus, All Rights Reserved..| Designed by Shrawan Vijay Deogirkar (GHRCEM PUNE)</p>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+
+
+
+</html>
